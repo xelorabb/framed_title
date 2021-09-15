@@ -1,10 +1,13 @@
 ## Framed Title
 
-![PyPI](https://img.shields.io/pypi/v/framed_title)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/framed_title)
-![GitHub](https://img.shields.io/github/license/xelorabb/framed_title)
+[![PyPI](https://img.shields.io/pypi/v/framed_title)](https://pypi.org/project/framed_title/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/framed_title)]((https://pypi.org/project/framed_title/))
+[![GitHub](https://img.shields.io/github/license/xelorabb/framed_title)](https://github.com/xelorabb/framed_title/blob/master/LICENSE)
 
 Prints a framed title
+
+#### Install
+`pip install framed_title`
 
 #### Examples
 
@@ -51,6 +54,18 @@ Prints a framed title
   d.set_margin(2,4,2,4)
   d.set_padding(2,4)
   d.show()
+
+  # OR #################################
+  d = FramedTitle(
+    ['Framed Title', 'Longer subtitle in the 2nd row'],
+    'simple',
+    ['cyan', 'dark'],
+    ['blue', 'dark'],
+    'left',
+    'gray',
+    [2, 4, 2, 4],
+    [2, 4])
+  d.show()
   ```
   ![example_04](https://raw.githubusercontent.com/xelorabb/framed_title/master/examples/example_04.png)
 
@@ -71,4 +86,4 @@ def __init__(self,
 ###### Argument Values
 * `frame_type`: [ _stroke_ | _double_stroke_ | _simple_ | _hash_ ]
 * `text_align`: [ _left_ | _center_ | _right_ ]
-* For colors values show [here](https://github.com/xelorabb/yatts)
+* See [here](https://github.com/xelorabb/yatts#color-palette) for color values
